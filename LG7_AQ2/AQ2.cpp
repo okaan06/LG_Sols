@@ -4,45 +4,23 @@
 int main(void)
 {
 
-	int minnum,gcd=1, div,num1,num2;
+	int x, y=0, z,i;
 
-	printf("Enter the integers: ");
-	scanf("%d %d",&num1,&num2);
-	if (num1 > num2)
-		minnum = num2;
-	else
-		minnum = num1;
+	printf("Enter int: ");
+	scanf("%d", &x);
 
+	for (i = 1; i < x; i++) {
 
+		if (x % i == 0)
+			y += i;
 
-	for (div = 1; div <= minnum; div++) {
-
-		if ((num1 % div==0 && num2 % div==0) == 1)
-			gcd = div;
 
 	}
 
-
-	printf("gcd: %d", gcd);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	if (y == x)
+		printf("yessss");
+	else
+		printf("bruhh");
 
 
 	return(0);
